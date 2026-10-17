@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YTLive</title>
+<meta name="description" content="Run 24/7 YouTube live streams from your own server, managed from a simple desktop app.">
+<link rel="icon" href="logo-120.png">
+<style>
+  :root { --bg:#f6f7fb; --card:#fff; --text:#171a26; --muted:#5b6175; --line:#e4e6ee; --accent:#ff5a5a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1119; --card:#171a26; --text:#e8eaf2; --muted:#a2a8bb; --line:#2a2e3d; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  .hero { padding:72px 0 40px; text-align:center; }
+  .hero img { width:96px; height:96px; border-radius:24px; box-shadow:0 10px 30px rgb(0 0 0 / 18%); }
+  h1 { font-size:42px; margin:20px 0 8px; letter-spacing:-0.02em; }
+  .lead { font-size:19px; color:var(--muted); max-width:620px; margin:0 auto; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:32px 0 48px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  a { color:var(--accent); }
+  footer { border-top:1px solid var(--line); padding:20px 0 40px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <img src="logo-512.png" alt="YTLive logo">
+    <h1>YTLive</h1>
+    <p class="lead">Run many 24/7 live streams on your own server and manage them from a simple desktop app for
+    Windows, macOS, and Linux. Streams keep running even when the app is closed.</p>
+  </section>
+  <section class="grid">
+    <div class="card"><h3>Your server, your data</h3><p>Videos, stream keys, and tokens stay on a server you own. No
+    cloud service in between, no tracking.</p></div>
+    <div class="card"><h3>Light on resources</h3><p>Streams are sent without re-encoding, so a small 1 vCPU / 1 GB server
+    can run ten streams at once.</p></div>
+    <div class="card"><h3>One-click server setup</h3><p>Enter your server address and SSH password; the app installs and
+    connects the Worker through a secure SSH tunnel.</p></div>
+    <div class="card"><h3>Schedules and loops</h3><p>Start now, once, daily, weekly, or with cron, in your own time zone,
+    with automatic recovery.</p></div>
+  </section>
+  <footer>© 2026 YTLive · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
